@@ -1,0 +1,77 @@
+body {
+    background: beige;
+}
+
+.caja {
+    border: 1px solid rgb(70, 60, 69);
+    background-color: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 200px;
+    height: 120px;
+    line-height: 200px;
+    text-align: center;
+    margin: 5px;
+}
+
+.flex-container {
+    border: 1px solid black;
+    background: #ccc;
+    padding: 20px;
+    width: 80%;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    /*flex-flow: Combina las propiedades flex direction y wrap*/
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.c1 {
+    background: lightblue;
+    order: 2;
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+
+.c2 {
+    background: lightcoral;
+    order: 3;
+    flex-grow: 1;
+}
+
+.c3 {
+    background: lightgreen;
+    order: 1;
+    flex-grow: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+FLEXBOX:
+también conocido como "Flexible Box Layout",
+es un modelo de diseño en CSS (Cascading Style Sheets) que fue creado para facilitar la creación de diseños de página web más flexibles y eficientes en términos de distribución y alineación de elementos en un contenedor. Flexbox se utiliza para crear diseños responsivos y adaptativos,
+lo que significa que los elementos dentro de un contenedor pueden reorganizarse automáticamente según el tamaño de la pantalla o el dispositivo. Aquí hay algunos conceptos clave y propiedades de Flexbox: Contenedor Flex (display: flex; ): Para utilizar Flexbox,
+primero debes convertir un elemento contenedor en un "contenedor flex" estableciendo su propiedad display en flex. Una vez que haces esto,
+todos los elementos hijos directos dentro del contenedor se comportarán como elementos flexibles. Ejes principales y cruzados: Flexbox trabaja con dos ejes: el eje principal y el eje cruzado. El eje principal es la dirección en la que se alinean los elementos flexibles,
+mientras que el eje cruzado es el perpendicular al eje principal. Alineación en el eje principal (justify-content): Con Flexbox,
+puedes controlar cómo se alinean los elementos a lo largo del eje principal. Puedes utilizar propiedades como justify-content para alinearlos hacia la izquierda,
+la derecha,
+el centro,
+el espacio entre ellos,
+etc. Alineación en el eje cruzado (align-items y align-content): Puedes controlar cómo se alinean los elementos en el eje cruzado utilizando propiedades como align-items para alinear individualmente cada elemento o align-content para alinear grupos de elementos. Orden de los elementos (order): Puedes cambiar el orden visual de los elementos sin cambiar su posición en el código HTML utilizando la propiedad order. Espacio entre elementos (flex-gap y gap): Puedes establecer espacios entre los elementos flexibles utilizando la propiedad gap (anteriormente flex-gap) para especificar espacios entre filas y columnas. Crecimiento y contracción (flex-grow, flex-shrink y flex-basis): Con Flexbox,
+puedes controlar cómo los elementos crecen,
+se contraen y se distribuyen en el contenedor usando estas propiedades. Alinear elementos individuales (align-self): Puedes anular la alineación en el eje cruzado de un elemento específico utilizando la propiedad align-self. Envoltura de elementos (flex-wrap): Puedes permitir que los elementos se envuelvan en filas o columnas adicionales cuando no tienen suficiente espacio en el contenedor principal. Flexbox es especialmente útil cuando necesitas diseñar diseños complejos y reorganizar elementos en una sola dimensión (ya sea horizontal o vertical).
+*/

@@ -1,0 +1,117 @@
+body {
+    background: antiquewhite;
+    text-align: center;
+}
+
+.caja {
+
+    border: 4px solid black;
+    background-color: lightgray;
+
+    text-align: center;
+    line-height: 150px;
+}
+
+.grid-layout {
+    width: 80%;
+    margin: 0 auto;
+    background-color: lightgreen;
+    padding: 20px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    justify-content: stretch;
+}
+
+.c1 {
+    grid-column: 1 / span 3;
+    background: lightskyblue;
+}
+
+.c2 {
+    grid-column: 1/3;
+    background: lightyellow;
+}
+
+.c3 {
+    grid-column: 3 / span 1;
+    background: lightsalmon;
+}
+
+
+.c5 {
+    grid-column: 2/4;
+    background: lightslategray;
+}
+
+.c6 {
+    grid-column: 1/3;
+    background: blue;
+}
+
+.c7 {
+    grid-column: 3 / span 1;
+    background: yellow;
+}
+
+.c8 {
+    grid-column: 1 / span 1;
+    background: lightblue;
+}
+
+.c9 {
+    grid-column: 2 /span 2;
+    background: lightpink;
+}
+
+.c10 {
+    grid-column: 1 / span 3;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+CSS Grid Layout es otro modelo de diseño en CSS que te permite crear diseños en dos dimensiones,
+es decir,
+en filas y columnas. A diferencia de Flexbox,
+que se centra en la distribución unidimensional,
+Grid Layout te permite trabajar con una estructura bidimensional,
+lo que es ideal para crear diseños más complejos y estructurados. Aquí están los conceptos clave y cómo puedes usar Grid Layout: 1. **Contenedor de cuadrícula (`display: grid; `)**: Al igual que con Flexbox,
+debes establecer la propiedad `display` del contenedor en `grid` para activar el diseño de cuadrícula en sus elementos hijos. 2. **Definir columnas y filas (`grid-template-columns` y `grid-template-rows`)**: Utiliza estas propiedades para especificar cómo se distribuyen las columnas y filas de la cuadrícula. Puedes definir tamaños en píxeles,
+porcentajes,
+fracciones (`fr`),
+valores automáticos,
+etc. 3. **Alineación (`justify-items`, `align-items`, `justify-content`, `align-content`)**: Al igual que en Flexbox,
+puedes controlar la alineación de los elementos en la cuadrícula tanto en el eje principal como en el eje cruzado. 4. **Alineación de elementos individuales (`justify-self` y `align-self`)**: Puedes controlar la alineación de elementos individuales dentro de sus celdas en la cuadrícula. 5. **Áreas (`grid-template-areas`)**: Puedes asignar nombres a áreas específicas en la cuadrícula y luego utilizarlos para organizar los elementos en esas áreas. Esto facilita la creación de diseños más complejos y con mayor semántica. 6. **Posicionamiento (`grid-column` y `grid-row`)**: Puedes posicionar elementos específicos en ubicaciones precisas dentro de la cuadrícula utilizando estas propiedades. 7. **Superposición (`z-index`)**: Puedes controlar la superposición de elementos usando la propiedad `z-index`. 8. **Espacios entre celdas (`grid-gap`)**: Puedes establecer espacios horizontales y verticales entre las celdas de la cuadrícula utilizando esta propiedad. Aquí hay un ejemplo simple de cómo podrías utilizar CSS Grid Layout: ```css .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    /* Tres columnas con tamaños proporcionales
+    grid-template-rows: auto 100px auto;
+    /* Filas automáticas y una de altura fija
+    grid-gap: 10px;
+    /* Espacio entre las celdas
+}
+
+.item1 {
+    grid-column: 1 / 3;
+    /* Ocupa dos columnas
+}
+
+.item2 {
+    grid-row: 2;
+    /* En la segunda fila
+}
+
+.item3 {
+    grid-column: 2 / 4;
+    /* Ocupa desde la segunda hasta la cuarta columna
+}
+*/
